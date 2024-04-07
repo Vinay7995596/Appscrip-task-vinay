@@ -1,0 +1,33 @@
+.normal-headong {
+    font-family: 'Simplon Norm';
+    font-size: 30px;
+
+}
+
+.container-second-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.select-options {
+    height: 40px;
+    width: 150px;
+    padding: 10px;
+}
+
+.middle-option-target {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.items-fliter-heading-target {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 40px;
+    color: #252020;
+}

@@ -1,0 +1,46 @@
+
+.logo-size {
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+}
+
+.list-order {
+    list-style: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-bar-main-container {
+    margin: 10px 20px 0px 20px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo-heading {
+    margin: 0px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.list-order-container-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-order-two{
+    list-style: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+@media all and (max-width:766px) {
+    .logo-heading {
+        font-size: 20px;
+    }
+}
