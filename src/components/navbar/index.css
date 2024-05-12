@@ -5,6 +5,14 @@
     background-size: cover;
 }
 
+.input-isther {
+    display: flex;
+}
+
+.input-is-not-there {
+    display: none;
+}
+
 .list-order {
     list-style: none;
     font-size: 20px;
@@ -37,6 +45,16 @@
     list-style: none;
     font-size: 15px;
     font-weight: 500;
+}
+
+.search-icons {
+    height: 20px;
+    width: 20px;
+}
+.button-searc-container {
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
 }
 
 @media all and (max-width:766px) {

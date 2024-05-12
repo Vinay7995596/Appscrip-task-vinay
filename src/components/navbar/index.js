@@ -3,8 +3,16 @@ import { FaSearch, FaRegUser, FaShoppingBag } from "react-icons/fa";
 import {CiHeart} from 'react-icons/ci';
 import { RiEnglishInput } from "react-icons/ri";
 import logo from '../../Vector@2x.jpg'
+import { useState } from 'react';
 
 const Navbar = () => {
+    const [isHere, notThere] = useState(true)
+  
+    const isinputhere = () => {
+        notThere(!isHere)
+        }
+    
+    
     return (
         <div>
             <div className='nav-bar-main-container '>
@@ -16,12 +24,15 @@ const Navbar = () => {
                 </div>
                 <div>
                     <ul className='list-order'>
-                        <li><FaSearch /></li>
-                        <li><CiHeart/></li>
-                        <li><FaShoppingBag/></li>
-                        <li><FaRegUser /></li>
-                        <li><RiEnglishInput/></li>
+                        <button className='button-searc-container' onClick={isinputhere}><li><FaSearch className='search-icons'/></li></button>
+                        <li><CiHeart className='search-icons'/></li>
+                        <li><FaShoppingBag className='search-icons'/></li>
+                        <li><FaRegUser className='search-icons'/></li>
+                        <li><RiEnglishInput className='search-icons'/></li>
                     </ul>
+                    <div>
+                        <input className={`input-isther ${isHere ? 'input-is-not-there' : ''}`} type='text' placeholder='Search'/>
+                    </div>
                 </div>
             </div>
             <div className='list-order-container-two'>

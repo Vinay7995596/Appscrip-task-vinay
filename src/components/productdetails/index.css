@@ -7,9 +7,8 @@
 
 
 .list-items-filters-container {
-    border-bottom: 1px solid #000;
+    /* border-bottom: 1px solid #000; */
     list-style: none;
-    margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,7 +33,6 @@
 
 .list-container-products {
     list-style: none;
-    width: 250px;
     text-align: center;
     height: 299px;
     overflow: hidden;
@@ -59,6 +57,57 @@
     padding: 0px;
     margin: 10px;
     gap: 20px;
+}
+
+.like-price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.price-size {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0px;
+    padding: 0px;
+}
+
+.icon-heart {
+    height: 25px;
+    width: 25px;
+}
+
+
+
+.button-heart {
+    border: 0px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.icon-heart.liked {
+    color: red;
+}
+
+.button-for-side-navigations {
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+}
+
+.div-side-navigation-container {
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+}
+
+.container-side-navigation {
+    text-align: start;
+}
+
+.div-side-navigation-container-2 {
+    display: none;
 }
 
 @media all and (max-width:475px) {
